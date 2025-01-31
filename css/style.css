@@ -188,13 +188,6 @@ main {
   justify-self: end;
 }
 
-.informacoesExperiencias {
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-  margin: 12px 0 0 0;
-} 
-
 
 .anoExperiencia {
   padding-top: 22px;
@@ -214,16 +207,10 @@ main {
   
 }
 
-.listaExperiencia {
-  grid-column: 2;
-}
-
-
 .itemListExperiencia {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 37px;
-  position: relative;
 }
 
 .itemListExperiencia p {
@@ -241,7 +228,8 @@ main {
   border: 2px solid var(--color-gray-c2);
   font-family: var(--font-family-secundaria);
   gap: 50px;
-  margin-bottom: 20px ;
+  margin-bottom: 20px;
+  position: relative;
 }
 
 .containerTecnologias::before {
@@ -251,7 +239,8 @@ main {
   width: 4px;
   height: 20px;
   background-image: linear-gradient(90deg,#6D33A6, #4429A6);
-  left: 62px;
+  left: -6px;
+  top: 19px;
 }
 
 .descricaoProjeto {
@@ -275,6 +264,7 @@ main {
  flex-wrap: wrap;
   gap: 5px;
   font-size: 0,87;
+  max-width: 201px;
 }
 
 .tecnologias p {
@@ -282,4 +272,48 @@ main {
   background-color: white;
   border-radius: 4px;
   color: var(--color-black-1);
+  
+}
+
+@media (max-width: 1300px) {
+  .container-experiencia {
+    gap:  50px 30px;
+    max-width: 1000px;
+  }
+  .itemListExperiencia {
+    gap: 10px;
+  }
+  .containerTecnologias::before {
+    left: -5px;
+    top: 19px;
+  }
+}
+
+@media (max-width:1200px) {
+  .container-experiencia { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tituloExperiencia {
+    text-align: center;
+  }
+}
+
+@media (max-width: 710px) {
+  .nome-desenvolvedor::before {
+    display: none;
+  }
+
+  .descricaoExperiencia {
+    font-size: 1.4rem;
+  }
+
+  .infoTecnologias{
+    text-align: center;
+  }
+  .tecnologias {
+    justify-content: center;
+  }
+  
 }
