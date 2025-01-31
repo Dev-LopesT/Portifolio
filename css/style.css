@@ -152,3 +152,12 @@ main {
     left: 14px;
   }
 }
+
+@media (max-width: 600px) {
+
+  .nome-desenvolvedor {
+    font-size: 3rem;
+  }
+
+
+}
