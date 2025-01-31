@@ -1,0 +1,154 @@
+/* Reset de Padrões Navegador */
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box !important;
+}
+
+
+header {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 140px;
+  flex-wrap: wrap;
+}
+
+.titulo {
+  font-family: var(--font-family-main);
+  font-weight: bold;
+  font-size: var(--font-size-titulo);
+}
+
+.nav-container-flex {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-container-flex a {
+  display: inline-block;
+  font-family: var(--font-family-secundaria);
+  color: var(--color-black-1);
+  font-size: var(--font-size-p);
+  position: relative;
+}
+
+.nav-container-flex a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  width: 50%;
+  height: 4px;
+  background-color: var(--color-black-1);
+  transform: translateX(-50%) scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-container-flex a:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+@media (max-width: 1150px) {
+  header {
+    margin: 30px 30px; 
+  }
+
+}
+
+@media (max-width: 900px) {
+
+  header {
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+  }
+  
+}
+
+
+/* Main  */
+
+/* Primeira Seção */
+main {
+  padding: 40px 0;
+  margin: 0 140px;  
+}
+
+.grid-container-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+  gap: 60px;
+}
+
+
+.img-perfil {
+  display: block;
+  max-width: 360px;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.nome-desenvolvedor {
+  position: relative;
+  font-size: 4.5rem;
+  font-family: var(--font-family-main);
+  font-weight: bold;
+  line-height: 1;
+  max-width: 600px;
+  margin-bottom: 22px;
+}
+
+.grid-container-conteudo div {
+  justify-self: start;
+}
+
+
+.nome-desenvolvedor::before {
+  content: url("../img/detalhe.svg");
+  position: absolute;
+  top: -28px;
+  left: -40px;
+  grid-column: 2;
+  z-index: -1;
+  
+}
+
+.local-desenvolvedor {
+  font-size: 1.5rem;
+  font-family: var(--font-family-secundaria);
+  color: var(--color-gray-c10);
+  font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+
+  main {
+    margin: 0 60px;
+  }
+
+  .grid-container-conteudo {
+    display: flex !important;
+    flex-direction: column;
+    gap: 80px;
+  } 
+
+  .grid-container-conteudo div {
+    text-align: center;
+    justify-content: center;
+  }
+  .nome-desenvolvedor::before {
+    left: 14px;
+  }
+}
