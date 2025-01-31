@@ -290,6 +290,10 @@ main {
 }
 
 @media (max-width:1200px) {
+  .tituloExperiencia {
+    font-size: 9rem;
+  }
+
   .container-experiencia { 
     display: flex;
     flex-direction: column;
@@ -301,12 +305,17 @@ main {
 }
 
 @media (max-width: 710px) {
+  .tituloExperiencia {
+    font-size: 6rem;
+    text-align: center;
+  }
   .nome-desenvolvedor::before {
     display: none;
   }
 
   .descricaoExperiencia {
     font-size: 1.4rem;
+    padding: 0px;
   }
 
   .infoTecnologias{
@@ -316,4 +325,39 @@ main {
     justify-content: center;
   }
   
+}
+
+@media (max-width: 500px) {
+
+  main {
+    margin: 40px;
+  }
+
+  .descricaoExperiencia {
+    text-align: center;
+ 
+  }
+
+  .containerTecnologias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container-experiencia {
+    padding-top: 60px;
+  }
+
+  .containerTecnologias {
+    margin-bottom: 10px;
+    padding: 15px;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .tecnologias {
+    justify-content: center;
+   
+  }
 }
