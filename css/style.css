@@ -155,8 +155,23 @@ main {
 
 @media (max-width: 600px) {
 
+  .nome-desenvolvedor::before {
+    display: none;
+  }
+  
   .nome-desenvolvedor {
     font-size: 3rem;
+  }
+
+  .img-perfil {
+    width: 300px;
+  }
+
+}
+
+@media (max-width: 320px) {
+  .nome-desenvolvedor {
+    font-size: 2.5rem;
   }
 
 
