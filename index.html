@@ -6,99 +6,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portifólio - Thiago Lopes</title>
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/variaveis.css">
 </head>
 
 <body>
-  <header>
-    <h1 class="titulo">Portfólio Thiago Lopes</h1>
-    <nav aria-label="Primária">
-      <ul class="nav-container-flex">
-        <li><a href="#" class="list-item">Experiência</a></li>
-        <li><a href="#" class="list-item">Formação</a></li>
-        <li><a href="#" class="list-item">Contato</a></li>
+  <header class="header">
+    <h1>Thiago Lopes</h1>
+    <nav>
+      <ul class="header-menu">
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#Formacao">Formação</a></li>
+        <li><a href="#Contato">Contato</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <article class="grid-container-conteudo" aria-labelledby="sobreDesenvolvedor">
-      <img class="img-perfil" src="./img/119-DSC_4419.png" alt="Foto-Thiago-Lopes">
+  <main class="main" aria-label="Sessão principal">
+    <section class="introducao" aria-labelledby="">
+      <img src="./img/119-DSC_4419.png" alt="Foto de perfil de Thiago Lopes" class="introducao-img">
+      <div class="introducao-texto">
+        <h2 class="titulo-introducao">Desenvolvedor <br> Front End & <br> UX/UI Designer</h2>
+        <p class="descricao-introducao">Localizado em São Paulo 🏖</p>
+      </div>
+    </section>
+    <section class="experiencia" id="experiencia" aria-label="experiencia">
+      <h2 class="subtitulo">Experiência</h2>
       <div>
-        <h2 id="sobreDesenvolvedor" class="nome-desenvolvedor">Desenvolvedor Front End & UX/UI Designer</h2>
-        <p class="local-desenvolvedor">Localizado em São Paulo 🏖</p>
-      </div>
-    </article>
-
-    <article aria-labelledby="experiencia" class="container-experiencia">
-      <h2 id="experiencia" class="tituloExperiencia">Experiência</h2>
-      <div >
-        <p class="descricaoExperiencia">Desenvolvo pequenos projetos como o Bikcraft utilizando apenas <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. Para aplicativos web como a rede social Dogs eu trabalhei no <strong>UX</strong> e <strong>UI Design</strong> do projeto.</p>
-      </div>
-      <ul class="listaExperiencia">
-        <li class="itemListExperiencia">
-          <p class="anoExperiencia">2024</p>
-          <div class="containerTecnologias">
-            <div>
-              <h3>Bikcraft</h3>
-              <p class="descricaoProjeto">Desenvolvo pequenos projetos como o Bikcraft utilizando apenas HTML, CSS e JavaScript. Para aplicativos web como a rede social Dogs.</p>
-            </div>
-            <div class="infoTecnologias">
-              <h3>Projeto Pessoal</h3>
-              <div class="tecnologias">
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>JavaScript</p>
-                <p>UX Design</p>
-                <p>UI Design</p>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="itemListExperiencia">
-          <p class="anoExperiencia">2025</p>
-          <div class="containerTecnologias">
-            <div>
-              <h3>Meu Portfólio</h3>
-              <p class="descricaoProjeto">Desenvolvo pequenos projetos como o Bikcraft utilizando apenas HTML, CSS e JavaScript. Para aplicativos web como a rede social Dogs.</p>
-            </div>
-            <div class="infoTecnologias">
-              <h3>Em Desenvolvimento</h3>
-              <div class="tecnologias">
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>JavaScript</p>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="itemListExperiencia">
-          <p class="anoExperiencia">2025</p>
-          <div class="containerTecnologias">
-            <div>
-              <h3>Clone Spotify</h3>
-              <p class="descricaoProjeto">Desenvolvo pequenos projetos como o Bikcraft utilizando apenas HTML, CSS e JavaScript. Para aplicativos web como a rede social Dogs.</p>
-            </div>
-            <div class="infoTecnologias">
-              <h3>Em Desenvolvimento</h3>
-              <div class="tecnologias">
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>JavaScript</p>
-                <p>UI Design</p>
-              </div>
-            </div>
-          </div>
-        </li>
+        <p class="experiencia-texto">Desenvolvo pequenos projetos como o Bikcraft utilizando apenas <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. Para aplicativos web como a rede social Dogs eu trabalhei no <strong>UX</strong> e <strong>UI Design</strong> do projeto.</p>
+        <div class="empresa">
+          <span class="empresa-ano">2021</span>
+          <h3 class="empresa-titulo">Mazziote</h3>
+          <span class="empresa-titulo">Gestão de Tráfego</span>
+          <p class="empresa-texto">Desenvolvi projetos de Campanhas para Marketing nas Plataformas: Facebook, Google e TikTok. Fiz toda a gestão de conteúdo e postagem de produtos nos canais de vendas.</p>
+          <ul class="empresa-habilidades">
+            <li>Google ADS</li>
+            <li>Facebook ADS</li>
+            <li>Tiktok ADS</li>
+            <li>Excel</li>
+            <li>Marketing</li>
+          </ul>
         
-      </ul>
-    </article>
-
-
-
+        </div>
+        <div class="empresa">
+          <span class="empresa-ano">Atual</span>
+          <h3 class="empresa-titulo">Aliança Divergente</h3>
+          <span class="empresa-titulo">QA/Tester Júnior</span>
+          <p class="empresa-texto">Responsável por realizar testes Automatizados nas aplicações da Empressa. Garantindo a qualidade e o funcionamento do software.</p>
+          <ul class="empresa-habilidades">
+            <li>Cypress</li>
+            <li>Selenium</li>
+            <li>CI/CD - Azure</li>
+          </ul>
+        
+        </div>
+        <div class="empresa">
+          <span class="empresa-ano">2022</span>
+          <h3 class="empresa-titulo">Bikcraft</h3>
+          <span class="empresa-titulo">Projeto Pessoal</span>
+          <p class="empresa-texto">Desenvolvo pequenos projetos como o Bikcraft utilizando apenas HTML, CSS e JavaScript. Para aplicativos web como a rede social Dogs.</p>
+          <ul class="empresa-habilidades">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>UX Design</li>
+            <li>UI Designer</li>
+          </ul>
+        
+        </div>
+      </div>
+    </section>
   </main>
-
-  <script src="./script.js"></script>
 </body>
 
 </html>
