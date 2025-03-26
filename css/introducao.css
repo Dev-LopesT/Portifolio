@@ -9,12 +9,6 @@
   max-width: 1200px;
 }
 
-.introducao-img {
-  width: 400px;
-  height: 500px;
-  object-fit: contain;
-}
-
 .introducao-texto {
   display: flex;
   flex-direction: column;
